@@ -1,0 +1,317 @@
+/* LAYOUT */
+/* ***** */
+/*Tipografia*/
+/* @font-face { */
+
+    h1, h2, h3, h4, h6{
+
+        font-family: sans-serif;
+    }
+    .contenedor{
+    
+        width: 100vw;
+    }
+    
+    .textoindex{
+        font-family: sans-serif;
+        grid-column: 1;
+        grid-row: 2;
+    
+    }
+    
+    .banerindex__titulo{
+        color: black;
+        font-family: sans-serif;
+        
+    
+     
+    
+    }
+    
+    .titulo2{
+        font-family: sans-serif;
+        color: white;
+        
+    }
+    
+    .titulodos{
+    
+        font-family: sans-serif;
+    }
+    
+    /*Header*/
+    
+    header{
+    
+    display:grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: auto auto auto auto auto;
+    }
+    
+    /*imagen header*/
+    
+    .banerindex{
+    
+    width:100%;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2/5;
+    
+    }
+    
+    .cocacolaproyectos{
+    
+    width:100%;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2/5;
+    
+    }
+    
+    .movilservicios{
+    
+        width:100%;
+        display: grid;
+        grid-column: 1;
+        grid-row: 2/5;
+    }
+    
+    /*logo*/
+    
+    .logo{
+    
+        display: grid;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    /*logo menu*/
+    
+    .menu{
+    
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    /*MAIN*/
+    
+    main{
+    
+        
+    }
+    
+    .componentesmain{
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    
+    }
+    .bannerindex__main{
+    
+        width: 100%;
+        
+        
+    }
+    
+    .flecha__vector{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .titulodos{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    }
+    
+    .componentesmain__primero{
+    
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .componentesmain__segundo{
+    
+        justify-content: start;
+        align-items: center;
+    }
+    
+    /*MAIN Servicios*/
+    
+    .servicios{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+        @media only screen and (min-width: 1100px) {
+            /* MainServicios */
+            .servicios{
+        
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            
+            }
+    
+            .servicios__pantalla{
+    
+                grid-column: 2;
+                grid-row: 1;
+                padding: 20px;
+            }
+    }
+    
+    
+    
+    .servicios__seo{
+    
+        grid-column: 3;
+        grid-row: 1;
+        padding: 20px;
+    }
+    
+    .quebuscas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+    
+    .servicios__lupa{
+    
+        grid-column: 1;
+        grid-row: 1;
+        padding: 20px;
+    
+    }
+    
+    .servicios__pantalla{
+    
+        grid-column: 1;
+        grid-row: 2;
+        padding: 20px;
+    }
+    
+    .servicios__codigo{
+    
+        grid-column: 3;
+        grid-row: 2;
+        padding: 20px;
+    }
+    
+    .servicios__lapiz{
+    
+        grid-column: 2;
+        grid-row: 3;
+        
+    }
+    
+    /*Main Proyectos*/
+    
+    
+    .tituloservicios{
+    
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .maintodos{
+    
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .balearia{
+    
+        display: flex;
+        flex-direction: row;
+    
+    
+        }
+    
+    .hamburguesa{
+    
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    
+    .marcapersonal{
+    
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    /*footer*/
+    
+    .copy{
+    
+        background-color: rgb(161, 153, 153);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        
+    }
+    
+    /*formulario*/
+    
+    .formulario__contactar{
+    
+        color: white;
+        background-color: black;
+    }
+    
+    .boton{
+        background-color: red;
+        color: white;
+    }
+    
+    /*Banner Mapa*/
+    
+    .footer__mapa{
+    
+      display: flex;
+        background-color:black;
+        justify-content: center;
+        
+    }
+    
+    .formulario{
+    
+        background-color: black;
+        flex-grow: 1;
+    }
+    
+    .mapa{
+    
+        
+        background-color: black;
+    }
+    
+    .formulario{
+    
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        /* Banner */
+        .formulariomapa{
+    
+            display: flex;
+            flex-direction:row;
+        
+        }

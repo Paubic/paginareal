@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+   
+  
+   
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <style>
+            /* desaparecer el checkbox */
+            #activar, .desplegable{
+                display: none;
+            }
+            #activar:checked ~ .desplegable{
+                display: block;
+            }
+            </style>
+   <!-- HEADER -->
+   <header>
+    <a class="logo" href="./index.html">
+        <img  src="./img/svg/Logo.svg" alt="logo">
+    </a>
+
+    <!--Menu Desplegable-->
+    <input type="checkbox" id="activar">
+    <label for="activar">
+        <img class="menu" src="./img/svg/menu.svg" alt="">
+    </label>
+    <!-- Desplegable -->
+    <nav class="desplegable">
+        
+           <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="proyectos.html">Proyectos</a>
+        
+    </nav>
+
+    <picture class="cocacolaproyectos" >
+        <!--Banner-->
+        <!--Smartphone-->
+        <source 
+
+        srcset="
+        ./img/smartphone/cocacolaproyectos.jpg 1x,
+        ./img/smartphone/cocacolaproyectos@2x.jpg 2x,
+        ./img/smartphone/cocacolaproyectos@3x.jpg 3x
+        "
+
+        
+
+        media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+        />
+
+         <!--Deskstop-->
+         <source 
+
+         srcset="./img/desktop/cocacolaproyectos.jpg 1x,
+         ./img/desktop/cocacolaproyectos@2x.jpg 2x,
+         "
+
+         media="(min-width: 1000px)"
+
+         />
+
+         <img src="" alt="Banner"/>
+
+        </picture>
+         
+   </header>
+<!-- MAIN -->
+<main>
+<main id="abajo"></main>
+
+<a class="flecha__vector" href="#abajo">
+    <img  src="./img/svg/flecha.svg" alt="logo">
+</a>
+
+    <h2 class="tituloservicios">ALGUNOS DE NUESTROS CLIENTES</h2>
+
+    <div class="maintodos">
+<article class="balearia">
+
+    <picture class="balearia__imagen" >
+        <!--Banner-->
+        <!--Smartphone-->
+        <source 
+
+        srcset="
+        ./img/smartphone/balearia.jpg 1x,
+        ./img/smartphone/balearia@2x.jpg 2x,
+        .s/img/smartphone/balearia@3x.jpg 3x
+        "
+
+        
+
+        media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+        />
+
+         <!--Deskstop-->
+         <source 
+
+         srcset="./img/desktop/balearia.jpg 1x,
+         ./img/desktop/balearia2x.jpg 2x,
+         "
+
+         media="(min-width: 1000px)"
+
+         />
+
+         <img  src="" alt="balearia"/>
+
+         </picture>
+         <figcaption class="balearia__texto">
+         <h3>Balearia</h3>
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali.
+            Lorem ipsum dolor sit amet, adipiscing elit ut ali.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali.
+            Lorem ipsum dolor sit amet, adipiscing elit ut ali</p>
+
+        </figcaption>
+</article>
+
+        <article class="hamburguesa">
+            <picture class="hamburguesa__imagen" >
+                <!--Banner-->
+                <!--Smartphone-->
+                <source 
+        
+                srcset="
+                ./img/smartphone/hamburguesa.jpg 1x,
+                ./img/smartphone/hamburguesa@2x.jpg 2x,
+                ./img/smartphone/hamburguesa3x.jpg 3x
+                "
+        
+                
+        
+                media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+        
+                />
+        
+                 <!--Deskstop-->
+                 <source 
+        
+                 srcset="./img/desktop/hamburguesa.jpg 1x,
+                 ./img/desktop/hamburguesa2x.jpg 2x,
+                 "
+        
+                 media="(min-width: 1000px)"
+        
+                 />
+        
+                 <img  src="" alt="hamburguesa"/>
+        
+                 </picture>
+
+                 <figcaption class="hamburguesa__texto">
+                 <h3>Bronx</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali.
+                    Lorem ipsum dolor sit amet, adipiscing elit ut ali.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali.
+                    Lorem ipsum dolor sit amet, adipiscing elit ut ali</p>
+                
+                </figcaption>
+            </article>
+
+            <article class="marcapersonal">  
+                 <picture class="marcapersonal__imagen" >
+                    <!--Banner-->
+                    <!--Smartphone-->
+                    <source 
+            
+                    srcset="
+                    ./img/smartphone/marca.jpg 1x,
+                    ./img/smartphone/marca@2x.jpg 2x,
+                    ./img/smartphone/marca@3x.jpg 3x
+                    "
+            
+                    
+            
+                    media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+            
+                    />
+            
+                     <!--Deskstop-->
+                     <source 
+            
+                     srcset="./img/desktop/marca.jpg 1x,
+                     ./img/desktop/marca2x.jpg 2x,
+                     "
+            
+                     media="(min-width: 1000px)"
+            
+                     />
+            
+                     <img class="marca" src="" alt="marca"/>
+            
+                     </picture>
+            <figcaption class="marcapersonal__texto">
+             <h3>Marca Personal</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali.
+                    Lorem ipsum dolor sit amet, adipiscing elit ut ali.Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali.
+                    Lorem ipsum dolor sit amet, adipiscing elit ut ali</p>
+                </figcaption>
+            </article>
+        </div>
+</main>
+
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="footer">
+    <!--metodo get i post-->
+<div class="formulariomapa">
+    <form class="formulario" action="enviado.html" method="get">
+      <h5 class="formulario__contactar">Contactar</h5>
+      <!--Nombre Completo-->
+
+      <label class="formulario__nombre"></label>
+      <input 
+      type="text" 
+      name="nombre" 
+      placeholder="nombre completo" 
+      pattern="^[A-Za-z] [2,20]$">
+
+      <!--Email-->
+      <label></label>
+      <input 
+      type="text" 
+      name="Email" 
+      required 
+      placeholder="tu email personal">
+
+      <!--Movil-->
+      <label></label>
+      <input 
+      type="text" 
+      placeholder="Movil" 
+      name="Solo Movil">
+
+      <!--Comentario-->
+      <label></label>
+      <textarea 
+      name="Comentario" 
+      placeholder="Comentario"
+      cols="30" 
+      rows="10">
+      </textarea>
+
+      <button class="boton" type="submit">Enviar</button>
+  </form>
+
+  
+  <picture class="footer__mapa" >
+      <!--Banner-->
+      <!--Smartphone-->
+      <source 
+
+      srcset="
+      .//img/smartphone/mapa.jpg 1x,
+      .//img/smartphone/mapa@2x.jpg 2x,
+      .//img/smartphone/mapa@3x.jpg 3x,
+      "
+
+      
+
+      media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+      />
+
+       <!--Deskstop-->
+       <source 
+
+       srcset="./img/smartphone/mapa.jpg 1x,
+       ./img/smartphone/mapa@2x.jpg 2x,
+       "
+
+       media="(min-width: 1000px)"
+
+       />
+
+       <img class="mapa" src="" alt="Banner"/>
+
+       </picture>
+      </div>
+  <h6 class="copy">&copy;Copyright 2021</h6>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+   
+  
+   
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <style>
+            /* desaparecer el checkbox */
+            #activar, .desplegable{
+                display: none;
+            }
+            #activar:checked ~ .desplegable{
+                display: block;
+            }
+            </style>
+   <!-- HEADER -->
+   <header>
+    <a class="logo" href="./index.html">
+        <img  src="./img/svg/Logo.svg" alt="logo">
+    </a>
+
+    <!--Menu Desplegable-->
+    <input type="checkbox" id="activar">
+    <label for="activar">
+        <img class="menu" src="./img/svg/menu.svg" alt="">
+    </label>
+    <!-- Desplegable -->
+    <nav class="desplegable">
+        
+           <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="proyectos.html">Proyectos</a>
+        
+    </nav>
+
+    <picture class="movilservicios" >
+        <!--Banner-->
+        <!--Smartphone-->
+        <source 
+
+        srcset="
+        ./img/smartphone/movilservicios.jpg 1x,
+        ./img/smartphone/movilservicios@2x.jpg 2x,
+        ./img/smartphone/movilservicios@3x.jpg 3x
+        "
+
+        
+
+        media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+        />
+
+         <!--Deskstop-->
+         <source 
+
+         srcset="./img/desktop/movilservicios.jpg 1x,
+         ./img/desktop/movilservicios@2x.jpg 2x,
+         "
+
+         media="(min-width: 1000px)"
+
+         />
+
+         <img class="banner" src="" alt="Banner"/>
+
+         </picture>
+</header>
+<!-- MAIN -->
+<a class="flecha__vector" href="#abajo">
+    <img  src="./img/svg/flecha.svg" alt="logo">
+</a>
+<main id="abajo">
+
+    <h2 class="quebuscas">¿Qué Buscas?</h2>
+
+    <div class="servicios">
+<span class="servicios__seo">
+    <img  src="./img/svg/seo.svg" alt="SEO">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali</p>
+</span>
+
+<span class="servicios__lupa">
+    <img  src="./img/svg/lupa.svg" alt="logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali</p>
+</span>
+
+<span class="servicios__pantalla">
+    <img  src="./img/svg/Pantalla.svg" alt="logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali</p>
+</span>
+
+<span class="servicios__codigo">
+    <img  src="./img/svg/codigo.svg" alt="logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali</p>
+</span>
+
+    <span class="servicios__lapiz">
+    <img  src="./img/svg/lapiz.svg" alt="logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali</p>
+</span>
+</div>
+   
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+    <!--metodo get i post-->
+<div class="formulariomapa">
+    <form class="formulario" action="enviado.html" method="get">
+      <h5 class="formulario__contactar">Contactar</h5>
+      <!--Nombre Completo-->
+
+      <label class="formulario__nombre"></label>
+      <input 
+      type="text" 
+      name="nombre" 
+      placeholder="nombre completo" 
+      pattern="^[A-Za-z] [2,20]$">
+
+      <!--Email-->
+      <label></label>
+      <input 
+      type="text" 
+      name="Email" 
+      required 
+      placeholder="tu email personal">
+
+      <!--Movil-->
+      <label></label>
+      <input 
+      type="text" 
+      placeholder="Movil" 
+      name="Solo Movil">
+
+      <!--Comentario-->
+      <label></label>
+      <textarea 
+      name="Comentario" 
+      placeholder="Comentario"
+      cols="30" 
+      rows="10">
+      </textarea>
+
+      <button class="boton" type="submit">Enviar</button>
+  </form>
+
+  
+  <picture class="footer__mapa" >
+      <!--Banner-->
+      <!--Smartphone-->
+      <source 
+
+      srcset="
+      .//img/smartphone/mapa.jpg 1x,
+      .//img/smartphone/mapa@2x.jpg 2x,
+      .//img/smartphone/mapa@3x.jpg 3x,
+      "
+
+      
+
+      media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+      />
+
+       <!--Deskstop-->
+       <source 
+
+       srcset="./img/smartphone/mapa.jpg 1x,
+       ./img/smartphone/mapa@2x.jpg 2x,
+       "
+
+       media="(min-width: 1000px)"
+
+       />
+
+       <img class="mapa" src="" alt="Banner"/>
+
+       </picture>
+      </div>
+  <h6 class="copy">&copy;Copyright 2021</h6>
+</footer>
+</div>
+</body>
+</html>
